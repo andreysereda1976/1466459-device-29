@@ -22,21 +22,20 @@
       </div>
       <nav class="main-navigation">
         <ul class="nav-list">
-          <li><a href="catalog.html" class="nav-catalog">Каталог товаров</a></li>
+          <li><a href="catalog.html" class="nav-catalog">Каталог товаров</a>
+            <ul class="catalog-menu visually-hidden">
+              <li class="cat-menu-item">Виртуальная реальность</li>
+              <li class="cat-menu-item">Моноподы для селфи</li>
+              <li class="cat-menu-item">Экшн-камеры</li>
+              <li class="cat-menu-item">Фитнес-браслеты</li>
+              <li class="cat-menu-item">Умные часы</li>
+              <li class="cat-menu-item">Квадрокоптеры</li>
+            </ul>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <section class="catalog-menu visually-hidden">
-          <ul>
-            <li class="cat-menu-item">Виртуальная реальность</li>
-            <li class="cat-menu-item">Моноподы для селфи</li>
-            <li class="cat-menu-item">Экшн-камеры</li>
-            <li class="cat-menu-item">Фитнес-браслеты</li>
-            <li class="cat-menu-item">Умные часы</li>
-            <li class="cat-menu-item">Квадрокоптеры</li>
-          </ul>
-        </section>
       </nav>
     </header>
 
@@ -48,102 +47,100 @@
           <button type="button" class="display-toggle toggle-slide-2" aria-label="Второй слайд"></button>
           <button type="button" class="display-toggle toggle-slide-3" aria-label="Третий слайд"></button>
         </div>
-        <div class="slide slide-1 slide-shown">
-          <h2 class="visually-hidden">Товары дня. Длинная палка для селфи</h2>
-          <div class="slide-image">
-            <img src="img/slider-1.png" width="384" height="486" alt="Длинная палка для селфи">
-          </div>
-          <p class="slide-indicator"></p>
-          <p class="slide-number"><img src="img/01.svg"></p>
-          <p class="slide-motto">Делай селфи,<br>как Бен Стиллер!</p>
-          <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a href="#" class="slide-details button">Подробнее</a>
-          <table class="slide-data">
-            <tr class="table-data">
-              <td class="w-160">8,5 м</td>
-              <td class="w-140">5 кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr class="table-description">
-              <th>Длина палки</th>
-              <th>Вес палки</th>
-              <th>Материал</th>
-            </tr>
-          </table>
-        </div>
-        <div class="slide slide-2">
-          <h2 class="visually-hidden">Товары дня. Мотивирующие фитнес-браслеты</h2>
-          <div class="slide-image">
-            <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
-          </div>
-          <p class="slide-indicator"></p>
-          <p class="slide-number"><img src="img/02.svg"></p>
-          <p class="slide-motto">Худеем правильно!</p>
-          <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a href="#" class="slide-details button">Подробнее</a>
-          <table class="slide-data">
-            <tr class="table-data">
-              <td class="w-200">48 часов</td>
-            </tr>
-            <tr class="table-description">
-              <th>Без подзарядки</th>
-            </tr>
-          </table>
-        </div>
-        <div class="slide slide-3">
-          <h2 class="visually-hidden">Товары дня. Квадрокоптер с лазером</h2>
-          <div class="slide-image">
-            <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
-          </div>
-          <p class="slide-indicator"></p>
-          <p class="slide-number"><img src="img/03.svg"></p>
-          <p class="slide-motto">Порхает как бабочка, жалит как пчела!</p>
-          <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a href="#" class="slide-details button">Подробнее</a>
-          <table class="slide-data">
-            <tr class="table-data">
-              <td class="w-160">800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr class="table-description">
-              <th>Дальность полета</th>
-              <th>Радиус поражения</th>
-            </tr>
-          </table>
-        </div>
-        </div>
+        <ul class="slideshow">
+          <li class="slide slide-1 slide-shown">
+            <h2 class="visually-hidden">Товары дня. Длинная палка для селфи</h2>
+            <div class="slide-image">
+              <img src="img/slider-1.png" width="384" height="486" alt="Длинная палка для селфи">
+            </div>
+            <p class="slide-number"><img src="img/01.svg" width="182" height="170" alt="номер слайда 01"></p>
+            <p class="slide-motto">Делай селфи,<br>как Бен Стиллер!</p>
+            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a href="#" class="slide-details button">Подробнее</a>
+            <table class="slide-data">
+              <tr class="table-data">
+                <td class="w-160">8,5 м</td>
+                <td class="w-140">5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="table-description">
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
+              </tr>
+            </table>
+          </li>
+          <li class="slide slide-2">
+            <h2 class="visually-hidden">Товары дня. Мотивирующие фитнес-браслеты</h2>
+            <div class="slide-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+            </div>
+            <p class="slide-number"><img src="img/02.svg" width="212" height="170" alt="номер слайда 02"></p>
+            <p class="slide-motto">Худеем правильно!</p>
+            <p class="slide-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a href="#" class="slide-details button">Подробнее</a>
+            <table class="slide-data">
+              <tr class="table-data">
+                <td class="w-200">48 часов</td>
+              </tr>
+              <tr class="table-description">
+                <th>Без подзарядки</th>
+              </tr>
+            </table>
+          </li>
+          <li class="slide slide-3">
+            <h2 class="visually-hidden">Товары дня. Квадрокоптер с лазером</h2>
+            <div class="slide-image">
+              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+            </div>
+            <p class="slide-number"><img src="img/03.svg" width="212" height="170" alt="номер слайда 03"></p>
+            <p class="slide-motto">Порхает как бабочка, жалит как пчела!</p>
+            <p class="slide-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a href="#" class="slide-details button">Подробнее</a>
+            <table class="slide-data">
+              <tr class="table-data">
+                <td class="w-160">800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr class="table-description">
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+              </tr>
+            </table>
+          </li>
+        </ul>
       </section>
       <section class="categories">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li class="category">
             <a href="#" class="square virtual">
-              <span>Виртуальная реальность</span>
+              Виртуальная реальность
             </a>
           </li>
           <li class="category">
             <a href="#" class="square monopods">
-              <span>Моноподы для селфи</span>
+              Моноподы для селфи
             </a>
           </li>
           <li class="category">
             <a href="#" class="square cameras">
-              <span>Экшн-камеры</span>
+              Экшн-камеры
             </a>
           </li>
           <li class="category">
             <a href="#" class="square bracelets">
-              <span>Фитнес-браслеты</span>
+              Фитнес-браслеты
             </a>
           </li>
           <li class="category">
             <a href="#" class="square watches">
-              <span>Умные часы</span>
+              Умные часы
             </a>
           </li>
           <li class="category">
             <a href="#" class="square copters">
-              <span>Квадрокоптеры</span>
+              Квадрокоптеры
             </a>
           </li>
         </ul>
@@ -161,7 +158,6 @@
             <a href="#" class="button services-button">Кредит</a>
           </li>
         </ul>
-        <div class="services-divider"></div>
         <div class="serices-container">
           <div class="services-description delivery service-shown visually-hidden">
             <h3>Доставка</h3>
@@ -198,13 +194,13 @@
           <li class="brands-item brand-4">
             <a href="#">
               <span class="visually-hidden">Vive</span>
-            </a>            
+            </a>
           </li>
         </ul>
       </section>
       <section class="additional">
-        <div class="about">
-          <div class="add-decor"></div>
+        <h2 class="visually-hidden">Дополнительная информация о компании</h2>
+        <section class="about">
           <h3>О нас</h3>
           <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки<br>России! DEVICE работает со многими транспортными компаниями:</p>
@@ -214,16 +210,15 @@
             <li>ЖелДорЭкспедиция</li>
           </ul>
           <a href="#" class="button about-details">Подробнее о нас</a>
-        </div>
-        <div class="contacts">
-          <div class="add-decor"></div>
+        </section>
+        <section class="contacts">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p>
             <img src="img/map-1.png" width="560" height="222" alt="Офис интернет-магазина Девайс по адресу: улица Строителей, 15">
           </p>
           <a href="#" class="button send-email">Напишите нам</a>
-        </div>       
+        </section>
       </section>
     </main>
 
@@ -250,7 +245,6 @@
         <a class="phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-row bottom">
-        <p class="footer-decor"></p>
         <section class="social-media-container">
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="social-media">
