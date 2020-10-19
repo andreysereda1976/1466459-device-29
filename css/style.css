@@ -275,6 +275,11 @@ img {
   text-align: right;
 }
 
+.nav-list li:last-child a {
+  text-align: right;
+  margin-right: -4px;
+}
+
 .nav-catalog::after {
   content: url("../img/icon-plus.svg");
   padding-left: 16px;
