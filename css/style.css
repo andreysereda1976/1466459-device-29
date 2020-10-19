@@ -35,7 +35,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 28px;
   color: var(--basic-black);
@@ -79,7 +79,7 @@ img {
   height: 40px;
   box-sizing: border-box;
   padding-top: 9px;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -130,7 +130,7 @@ img {
 }
 
 .top-links {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
@@ -246,7 +246,7 @@ img {
 .main-navigation {
   position: relative;
   color: var(--max-black);
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -395,7 +395,7 @@ img {
 }
 
 .slide-motto {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -434,7 +434,7 @@ img {
 .slide-data {
   min-height: 80px;
   min-width: 179px;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 300;
   box-sizing: border-box;
   border: none;
@@ -491,7 +491,7 @@ img {
   position: relative;
   text-align: center;
   text-transform: none;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
@@ -556,17 +556,19 @@ img {
 /* Services section */
 
 .services {
-  display: flex;
-  flex-direction: row;
-  /* width: 1440px; */
+  width: 100%;
   min-height: 400px;
-  /* margin: 0 auto; */
-  margin-top: 34px;
-  padding: 0 140px;
-  box-sizing: border-box;
   background-image: url("../img/services-bg.svg");
   background-position: bottom;
   background-repeat: repeat-x;
+  margin-top: 34px;
+}
+
+.services-positioner {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .services-menu {
@@ -612,11 +614,6 @@ img {
   right: 0;
 }
 
-/* .services-container {
-  padding-top: 37px;
-  /* padding-left: 116px;
-} */
-
 .services-description {
   width: 758px;
   padding-left: 116px;
@@ -640,7 +637,7 @@ img {
 
 .services-description h3,
 .additional h3 {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -654,7 +651,7 @@ img {
 .services-description p {
   display: inline-block;
   width: 570px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -717,7 +714,7 @@ img {
 }
 
 .additional p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 28px;
@@ -753,7 +750,7 @@ img {
 
 .transport li {
   padding-left: 32px;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -796,7 +793,7 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-dark);
   min-height: 327px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   padding-top: 46px;
@@ -881,7 +878,7 @@ img {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
@@ -964,7 +961,7 @@ img {
   box-sizing: border-box;
   padding-left: 200px;
   text-align: left;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
@@ -1026,7 +1023,7 @@ img {
   padding-left: 200px;
   vertical-align: middle;
   background-color: var(--filter-bg);
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1059,7 +1056,7 @@ img {
 }
 
 .filter legend {
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -1090,7 +1087,7 @@ img {
   padding-top: 10px;
   background-position: left 70%;
   background-repeat: no-repeat;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 19px;
   font-weight: 300;
@@ -1150,7 +1147,7 @@ input:checked ~ .radio {
   margin: 0;
   padding-top: 25px;
   vertical-align: middle;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1252,7 +1249,7 @@ input:checked ~ .radio {
   align-items: baseline;
   margin: 0;
   margin-top: 36px;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   letter-spacing: 0.05em;
   color: var(--basic-black);
 }
@@ -1314,7 +1311,7 @@ input:checked ~ .radio {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
@@ -1339,7 +1336,7 @@ input:checked ~ .radio {
   width: 760px;
   min-height: 70px;
   background-color: var(--basic-grey-light);
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
@@ -1380,7 +1377,7 @@ input:checked ~ .radio {
   width: 120px;
   height: 70px;
   box-sizing: border-box;
-  font-family: "Gilroy", sans-serif;
+  font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
