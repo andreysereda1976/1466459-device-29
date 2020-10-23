@@ -20,16 +20,16 @@
         <a href="#" class="compare">Сравнить</a>
         <a href="#" class="cart">Корзина</a>
       </div>
-      <nav class="main-navigation">
+      <nav class="main-navigation" role="navigation">
         <ul class="nav-list">
-          <li><a href="catalog.html" class="nav-catalog">Каталог товаров</a>
-            <ul class="catalog-menu visually-hidden">
-              <li class="cat-menu-item">Виртуальная реальность</li>
-              <li class="cat-menu-item">Моноподы для селфи</li>
-              <li class="cat-menu-item">Экшн-камеры</li>
-              <li class="cat-menu-item">Фитнес-браслеты</li>
-              <li class="cat-menu-item">Умные часы</li>
-              <li class="cat-menu-item">Квадрокоптеры</li>
+          <li class="subcatalog-container"><a href="catalog.html" class="nav-catalog">Каталог товаров</a>
+            <ul class="catalog-menu">
+              <li class="cat-menu-item"><a href="catalog.html">Виртуальная реальность</a></li>
+              <li class="cat-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
+              <li class="cat-menu-item"><a href="catalog.html">Экшн-камеры</a></li>
+              <li class="cat-menu-item"><a href="catalog.html">Фитнес-браслеты</a></li>
+              <li class="cat-menu-item"><a href="catalog.html">Умные часы</a></li>
+              <li class="cat-menu-item"><a href="catalog.html">Квадрокоптеры</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка</a></li>
@@ -229,7 +229,7 @@
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p>
-            <img src="img/map-1.png" width="560" height="222" alt="Офис интернет-магазина Девайс по адресу: улица Строителей, 15">
+            <a href="#" class="large-map"><img src="img/map-1.png" width="560" height="222" alt="Офис интернет-магазина Девайс по адресу: улица Строителей, 15"></a>
           </p>
           <a href="#" class="button send-email">Напишите нам</a>
         </section>
@@ -302,28 +302,28 @@
 
     <section class="map-section visually-hidden">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <!-- Здесь будет карта -->
-      <button type="button">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0985126755395!2d37.52917983811763!3d55.68727501651072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1603452850876!5m2!1sen!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <button type="button" class="button-close" aria-label="Закрыть карту"></button>
     </section>
 
     <section class="email-container visually-hidden">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="email-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="name-form">
+      <form class="send-email-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="name-field">
           <label for="name">Ваше имя:</label>
-          <input type="text" name="name" class="name" id="name">
+          <input type="text" name="name" class="name" id="name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="email-field">
           <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" class="email" id="email">
+          <input type="email" name="email" class="email" id="email" placeholder="email@example.com">
         </p>
-        <p>
+        <p class="text-field">
           <label for="mailtext">Текст письма:</label>
-          <textarea class="mailtext" id="mailtext"></textarea>
+          <textarea class="mailtext" name="mailtext" id="mailtext" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit" class="button send-button">Отправить</button>
       </form>
-      <button type="button">Закрыть</button>
+      <button type="button" class="button-close" aria-label="Закрыть окно"></button>
     </section>
     <script src="js/index.js"></script>
   </body>
