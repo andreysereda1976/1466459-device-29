@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body class="basic">
     <header class="header index-header container-mid">
@@ -22,7 +22,7 @@
       </div>
       <nav class="main-navigation" role="navigation">
         <ul class="nav-list">
-          <li class="subcatalog-container"><a href="catalog.html" class="nav-catalog">Каталог товаров</a>
+          <li class="nav-item subcatalog-container"><a href="catalog.html" class="nav-catalog">Каталог товаров</a>
             <ul class="catalog-menu">
               <li class="cat-menu-item"><a href="catalog.html">Виртуальная реальность</a></li>
               <li class="cat-menu-item"><a href="catalog.html">Моноподы для селфи</a></li>
@@ -32,9 +32,9 @@
               <li class="cat-menu-item"><a href="catalog.html">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="nav-item"><a href="#">Доставка</a></li>
+          <li class="nav-item"><a href="#">Гарантия</a></li>
+          <li class="nav-item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -50,8 +50,8 @@
         <ul class="slideshow">
           <li class="slide slide-1 container-mid slide-shown">
             <h2 class="visually-hidden">Товары дня. Длинная палка для селфи</h2>
-            <div class="slide-image">
-              <img src="img/slider-1.png" width="384" height="486" alt="Длинная палка для селфи">
+            <div class="slide-image-container">
+              <img class="slide-image" src="img/slider-1.png" width="384" height="486" alt="Длинная палка для селфи">
             </div>
             <div class="slide-information">
               <p class="slide-number"><img src="img/01.svg" width="164" height="131" alt="номер слайда 01"></p>
@@ -74,8 +74,8 @@
           </li>
           <li class="slide slide-2 container-mid">
             <h2 class="visually-hidden">Товары дня. Мотивирующие фитнес-браслеты</h2>
-            <div class="slide-image">
-              <img src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
+            <div class="slide-image-container">
+              <img class="slide-image" src="img/slider-2.png" width="345" height="485" alt="Мотивирующие фитнес-браслеты">
             </div>
             <div class="slide-information">
               <p class="slide-number"><img src="img/02.svg" width="194" height="131" alt="номер слайда 02"></p>
@@ -94,8 +94,8 @@
           </li>
           <li class="slide slide-3 container-mid">
             <h2 class="visually-hidden">Товары дня. Квадрокоптер с лазером</h2>
-            <div class="slide-image">
-              <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
+            <div class="slide-image-container">
+              <img class="slide-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с лазером">
             </div>
             <div class="slide-information">
               <p class="slide-number"><img src="img/03.svg" width="196" height="131" alt="номер слайда 03"></p>
@@ -162,25 +162,25 @@
           <h2 class="visually-hidden">Дополнительные услуги</h2>
           <ul class="services-menu">
             <li>
-              <a href="#" class="button services-button service-active">Доставка</a>
+              <a href="#delivery" class="button services-button service-active">Доставка</a>
             </li>
             <li>
-              <a href="#" class="button services-button">Гарантия</a>
+              <a href="#warranty" class="button services-button">Гарантия</a>
             </li>
             <li>
-              <a href="#" class="button services-button">Кредит</a>
+              <a href="#credit" class="button services-button">Кредит</a>
             </li>
           </ul>
           <div class="serices-container">
-            <div class="services-description delivery service-shown">
+            <div class="services-description delivery service-shown" name="delivery">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо<br>заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="services-description warranty">
+            <div class="services-description warranty" name="warranty">
               <h3>Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
             </div>
-            <div class="services-description credit">
+            <div class="services-description credit" name="credit">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для нашего банка, разумеется.</p>
             </div>
@@ -300,14 +300,14 @@
     </div>
     </footer>
 
-    <section class="map-section visually-hidden">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
+    <section class="map-section" tabindex="0" role="dialog" aria-labelledby="map-popup-label">
+      <h2 class="visually-hidden" id="map-popup-label">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.0985126755395!2d37.52917983811763!3d55.68727501651072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1603452850876!5m2!1sen!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <button type="button" class="button-close" aria-label="Закрыть карту"></button>
     </section>
 
-    <section class="email-container visually-hidden">
-      <h2 class="visually-hidden">Напишите нам</h2>
+    <section class="email-container" tabindex="0" role="dialog" aria-labelledby="email-form-label">
+      <h2 class="visually-hidden" id="email-form-label">Напишите нам</h2>
       <form class="send-email-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="name-field">
           <label for="name">Ваше имя:</label>
@@ -325,6 +325,6 @@
       </form>
       <button type="button" class="button-close" aria-label="Закрыть окно"></button>
     </section>
-    <script src="js/index.js"></script>
+    <script src="js/index-min.js"></script>
   </body>
 </html>

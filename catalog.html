@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet"> -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
   	<header class="header catalog-header container-mid">
@@ -23,7 +23,7 @@
       </div>
       <nav class="main-navigation" role="navigation">
         <ul class="nav-list">
-          <li class="subcatalog-container"><a href="#" class="nav-catalog">Каталог товаров</a>
+          <li class="nav-item subcatalog-container subcatalog-container--catalog"><a href="catalog.html" class="nav-catalog nav-catalog--catalog">Каталог товаров</a>
             <ul class="catalog-menu">
               <li class="cat-menu-item"><a href="#">Виртуальная&nbsp;реальность</a></li>
               <li class="cat-menu-item"><a href="#">Моноподы для селфи</a></li>
@@ -33,9 +33,9 @@
               <li class="cat-menu-item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="nav-item"><a href="#">Доставка</a></li>
+          <li class="nav-item"><a href="#">Гарантия</a></li>
+          <li class="nav-item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -59,15 +59,15 @@
         <section class="catalog-inner-container container-mid">
           <section class="filter">
             <h2>Фильтр:</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form action="https://echo.htmlacademy.ru" method="get" target="_blank">
               <fieldset class="price">
                 <legend>Стоимость</legend>
                 <div class="price-range">
                   <div class="scale">
                     <div class="bar" style="width: 60%; margin-left: 0"></div>
                   </div>
-                  <div aria-label="Минимальная стоимость" class="pin pin-min" tabindex="0" style="left: 0"></div>
-                  <div aria-label="Максимальная стоимость" class="pin pin-max" tabindex="0" style="left: 57%"></div>
+                  <div aria-label="Минимальная стоимость" class="pin pin-min" role="slider" tabindex="0" style="left: 0"></div>
+                  <div aria-label="Максимальная стоимость" class="pin pin-max" role="slider" tabindex="0" style="left: 57%"></div>
                 </div>
                 <div class="price-inputs">
                   <div class="price-container">
