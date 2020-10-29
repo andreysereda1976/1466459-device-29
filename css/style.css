@@ -1102,7 +1102,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 25;
-
   opacity: 1;
   transition: all 1s linear;
 }
