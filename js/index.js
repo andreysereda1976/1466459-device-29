@@ -1,4 +1,4 @@
-'use strict';
+`use strict`;
 
 const toggleButtons = document.querySelectorAll(`.display-toggle`);
 const slides = document.querySelectorAll(`.slide`);
@@ -81,12 +81,12 @@ closeEmailPopup.addEventListener (`click`, function () {
   document.removeEventListener(`keydown`, onEmailPopupEsc);
 });
 
-emailForm.addEventListener("submit", function (evt) {
+emailForm.addEventListener(`submit`, function (evt) {
 	if (!nameInput.value || !emailInput.value || !textInput.value) {
     	evt.preventDefault();
-      emailPopup.classList.remove("form-error");
+      emailPopup.classList.remove(`form-error`);
       emailPopup.offsetWidth;
-      emailPopup.classList.add("form-error");
+      emailPopup.classList.add(`form-error`);
     }
 });
 

@@ -156,7 +156,7 @@ img {
   background-position: left 60%;
 }
 
-.login span {
+.logout {
   margin-left: 20px;
   color: var(--black-transparent);
 }
@@ -951,7 +951,7 @@ img {
   background-image: url("../img/icon-user-light-yellow.svg");
 }
 
-.foot-login span {
+.foot-logout {
   padding-left: 24px;
 }
 
@@ -1501,63 +1501,63 @@ img {
   padding-left: 40px;
 }
 
-input ~ .check {
+.check-input ~ .check {
   background-image: url("../img/checkbox-off.svg");
 }
 
-input:checked ~ .check {
+.check-input:checked ~ .check {
   background-image: url("../img/checkbox-on.svg");
 }
 
-input:hover ~ .check,
-input:focus ~ .check {
+.check-input:hover ~ .check,
+.check-input:focus ~ .check {
   background-image: url("../img/checkbox-off-opacity.svg");
 }
 
-input:active ~ .check {
+.check-input:active ~ .check {
   background-image: url("../img/checkbox-on.svg");
 }
 
-input:disabled ~ .check {
+.check-input:disabled ~ .check {
   opacity: 0.25;
 }
 
-input:checked:hover ~ .check,
-input:checked:focus ~ .check {
+.check-input:checked:hover ~ .check,
+.check-input:checked:focus ~ .check {
   background-image: url("../img/checkbox-on-opacity.svg");
 }
 
-input:checked:active ~ .check {
+.check-input:checked:active ~ .check {
   background-image: url("../img/checkbox-off-opacity.svg");
 }
 
-input ~ .radio {
+.radio-input ~ .radio {
   background-image: url("../img/radio-off.svg");
 }
 
-input:checked ~ .radio {
+.radio-input:checked ~ .radio {
   background-image: url("../img/radio-on.svg");
 }
 
-input:disabled ~ .radio {
+.radio-input:disabled ~ .radio {
   opacity: 0.25;
 }
 
-input:hover ~ .radio,
-input:focus ~ .radio {
+.radio-input:hover ~ .radio,
+.radio-input:focus ~ .radio {
   background-image: url("../img/radio-off-opacity.svg");
 }
 
-input:active ~ .radio {
+.radio-input:active ~ .radio {
   background-image: url("../img/radio-on.svg");
 }
 
-input:checked:hover ~ .radio,
-input:checked:focus ~ .radio {
+.radio-input:checked:hover ~ .radio,
+.radio-input:checked:focus ~ .radio {
   background-image: url("../img/radio-on-opacity.svg");
 }
 
-input:checked:active ~ .radio {
+.radio-input:checked:active ~ .radio {
   background-image: url("../img/radio-off.svg");
 }
 
@@ -1774,6 +1774,7 @@ input:checked:active ~ .radio {
   margin: 0;
   padding: 0;
   background-color: transparent;
+  padding-top: 9px;
 }
 
 .compare-button {
